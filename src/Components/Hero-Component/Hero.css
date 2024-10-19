@@ -1,0 +1,111 @@
+.hero-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.hero-container img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-top: 100px;
+    /* border: 2.5px solid #c4c0c3; */
+    padding: 2px;
+    box-shadow: 0 0 25px #e3178c;
+    /* animation: floatImage 4s ease-in-out infinite; */
+    transition: ease 0.4s;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+.hero-container img:hover{
+    box-shadow: 0 0 25px #e3178c,
+                0 0 35px #e3178c,
+                0 0 45px #e3178c;
+
+}
+@keyframes floatImage{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-1.4rem);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+
+.hero-container h1{
+    text-align: center;
+}
+.hero-container h1 span{
+    font-size: 2em;
+    text-align: center;
+}
+.hero-container h2{
+    text-align: center;
+}
+.hero-container h2 span{
+    font-size: 1.5em;
+    /* background: linear-gradient(270deg,rgb(50, 50, 239)10%,tomato 100%); */
+    background-image: linear-gradient(
+  45deg,
+  hsl(240deg 100% 20%) 0%,
+  hsl(289deg 100% 21%) 11%,
+  #8a0067 22%,
+  hsl(329deg 100% 36%) 33%,
+  hsl(337deg 100% 43%) 44%,
+  hsl(357deg 91% 59%) 56%,
+  hsl(17deg 100% 59%) 67%,
+  hsl(34deg 100% 53%) 78%,
+  hsl(45deg 100% 50%) 89%,
+  hsl(55deg 100% 50%) 100%
+);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+.hero-container p{
+    width: 50%;
+    text-align: center;
+    font-size: 1em;
+    font-weight: 600;
+    color: #c4c0c3;
+}
+.hero-resume a{
+    text-decoration: none;
+    font-weight: 600;
+
+}
+.hero-resume button{
+    background-image: linear-gradient(
+        45deg,
+        hsl(240deg 100% 20%) 0%,
+        hsl(289deg 100% 21%) 11%,
+        hsl(315deg 100% 27%) 22%,
+        hsl(329deg 100% 36%) 33%,
+        hsl(337deg 100% 43%) 44%,
+        hsl(357deg 91% 59%) 56%,
+        hsl(17deg 100% 59%) 67%,
+        hsl(34deg 100% 53%) 78%,
+        hsl(45deg 100% 50%) 89%,
+        hsl(55deg 100% 50%) 100%
+      );
+          padding: 15px;
+          border-radius: 20px;
+          cursor: pointer;
+          border-style: none;
+          font-size: 1.1em;
+          color: white;
+      
+
+}
+.hero-resume button:hover{
+    border: 2px solid white;
+    font-weight: 600;
+
+}

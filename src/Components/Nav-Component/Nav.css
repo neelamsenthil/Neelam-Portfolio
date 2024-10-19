@@ -1,0 +1,121 @@
+.nav-container{
+
+    display: flex;
+    position: sticky;
+    top: 0px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 50px;
+    
+}
+.nav-container img{
+   width: 200px;
+   border-radius: 10px;
+}
+.nav-menu{
+    display: flex;
+    list-style: none;
+    gap: 50px;
+    font-size: 1.2em;
+}
+.nav-menu li{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    font-weight: 600;
+
+}
+.nav-menu li img{
+    width: 40px;
+    display: flex;
+    margin: auto;
+
+}
+.nav-connect{
+    background: linear-gradient(267deg,rgb(50, 50, 239)0.35%,tomato 102.6%);
+    padding: 15px;
+    font-size: 1.2em;
+    font-weight: 600;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.nav-connect:hover{
+    transform: scale(1.05);
+}
+.anchor-link{
+    text-decoration: none;
+    color: white;
+}
+.nav-container .menu-open{
+    width: 35px;
+    display: none;
+}
+.nav-menu .menu-close{
+    width: 30px;
+    display: none;
+
+}
+
+
+
+@media(max-width:900px){
+    .nav-container{
+        position: static;
+    }
+
+    .nav-container .menu-open{
+        display: block;
+        position: fixed;
+        right: 30px;
+        z-index: 2;
+        cursor: pointer;
+    }
+    .nav-menu{
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        align-items:start;
+        gap: 30px;
+        top: 0;
+        background-color: rgba(80, 3, 58 );
+        width: 350px;
+        height: 100%;
+        z-index: 2;
+        transition: right 0.5s;
+        right: -350px;
+
+    }
+    .nav-menu .menu-close{
+        display: block;
+        position: relative;
+        top: 30px;
+        left: 290px;
+        cursor: pointer;
+    }
+    .nav-menu li{
+        font-size: 25px;
+        padding-left: 100px;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+
+}
+
+
+@media(max-width:700px){
+    .nav-container img{
+        width: 150px;
+     }
+     
+
+}
+
+@media(max-width:600px){
+    .nav-container img{
+        display: none;
+     }
+     
+
+}

@@ -1,0 +1,115 @@
+.skill-store{
+    display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin-top: 80px;
+}
+
+.title{
+    position: relative;
+    /* text-align: center;
+    margin-top: 50px; */
+}
+.title h1{
+    font-size: 80px;
+    padding: 0px 30px ;
+}
+.title img{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+.para{
+    margin-top: 20px;
+    font-size: 1.1em;
+}
+.skill img{
+    width: 25px;
+    height: 25px;
+}
+.skill-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    /* border: 2px solid blueviolet; */
+    width: 100%;
+    height: 100%;
+    margin-top: 40px;
+}
+.left ,.right{
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    border: 2px solid orangered;
+    border-radius: 30px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.heading{
+    padding-top: 20px;
+    font-size: 1.8em;
+    background-image: linear-gradient(
+        45deg,
+        hsl(240deg 100% 20%) 0%,
+        hsl(289deg 100% 21%) 11%,
+        hsl(315deg 100% 27%) 22%,
+        hsl(329deg 100% 36%) 33%,
+        hsl(337deg 100% 43%) 44%,
+        hsl(357deg 91% 59%) 56%,
+        hsl(17deg 100% 59%) 67%,
+        hsl(34deg 100% 53%) 78%,
+        hsl(45deg 100% 50%) 89%,
+        hsl(55deg 100% 50%) 100%
+      );
+          background-clip: text;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+      
+}
+.skill-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+.skill{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border: 2px solid #ffa500;
+    padding: 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+
+}
+.skill:hover{
+    transform: scale(1.1);
+    border:2px solid #e3178c ;
+
+}
+
+.skill p{
+    font-size: 1.2em;
+}
+/* .right .skill-content {
+    margin: 27px;
+} */
+
+@media(max-width:850px){
+    .skill-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .right .skill-content {
+        margin: 18px;
+    }
+    
+
+}
