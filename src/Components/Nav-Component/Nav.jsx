@@ -10,7 +10,7 @@ import { useRef } from 'react'
 
 
 const Nav = () => {
-  const [home,setHome] = useState("home")
+  const [home,setHome] = useState("about")
   const menuRef = useRef();
 
   const openMenu = ()=>{
@@ -27,7 +27,7 @@ const Nav = () => {
         <img src={menu_open} onClick={openMenu} alt=""  className='menu-open' />
             <ul ref={menuRef} className="nav-menu">
               <img src={menu_close} onClick={closeMenu} alt="" className='menu-close' />
-                <li> <AnchorLink className="anchor-link"  href='#home' > <p onClick={()=>{setHome("home")}}>Home</p> </AnchorLink>{home === "home" ? <img className='underline' src={underline}/> : <></>} </li>
+                {/* <li> <AnchorLink className="anchor-link"  href='#home' > <p onClick={()=>{setHome("home")}}>Home</p> </AnchorLink>{home === "home" ? <img className='underline' src={underline}/> : <></>} </li> */}
                 <li> <AnchorLink className="anchor-link"  offset={50}  href='#about' ><p onClick={()=>{setHome("about")}}>About Me</p> </AnchorLink>{home === "about" ? <img className='underline' src={underline}/> : <></>} </li>
                 <li> <AnchorLink className="anchor-link"  offset={50}  href='#skills'><p onClick={()=>{setHome("skills")}}>Skills</p> </AnchorLink>{home === "skills" ? <img className='underline' src={underline}/> : <></>} </li>
                 <li> <AnchorLink className="anchor-link"  offset={50}  href='#projects'><p onClick={()=>{setHome("projects")}}>Projucts</p> </AnchorLink>{home === "projects" ? <img className='underline' src={underline}/> : <></>} </li>

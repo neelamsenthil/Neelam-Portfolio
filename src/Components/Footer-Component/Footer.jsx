@@ -8,6 +8,7 @@ import gmail from '../../assets/gmail.png'
 
 
 const Footer = () => {
+  const year = new Date().getFullYear()
   return (
     <div className='footer-container'>
       <div className="footer-top">
@@ -30,7 +31,7 @@ const Footer = () => {
       <hr />
 
       <div className="footer-bottom">
-        <p>&copy; 2024 Neelam Senthil. All rights reserved.</p>
+        <p>&copy; {year} Neelam Senthil. All rights reserved.</p>
 
       </div>
     </div>

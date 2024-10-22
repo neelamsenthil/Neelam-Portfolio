@@ -78,7 +78,7 @@
         align-items:start;
         gap: 30px;
         top: 0;
-        background-color: rgba(80, 3, 58 );
+        background-color: rgba(80, 3, 58,0.8 );
         width: 350px;
         height: 100%;
         z-index: 2;
@@ -117,5 +117,14 @@
         display: none;
      }
      
+
+}
+
+@media(max-width:420px){
+    .nav-menu{
+
+
+
+    }
 
 }

@@ -113,3 +113,15 @@ margin-top: 80px;
     
 
 }
+
+@media(max-width:420px){
+    .skill p{
+        font-size: 16px;
+
+    }
+    .skill{
+        gap: 10px;
+
+    }
+
+}

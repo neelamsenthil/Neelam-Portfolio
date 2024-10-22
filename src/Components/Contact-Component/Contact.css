@@ -155,6 +155,16 @@
         padding: 0;
         font-size: 80px;
     }
+
+}
+
+@media(max-width:420px){
+    .contact-title h1{
+        font-size: 70px;
+    }
+    .contact-detail{
+        justify-content: start;
+    }
     
 
 
