@@ -14,7 +14,7 @@ const Footer = () => {
       <div className="footer-top">
         <div className="footer-top-left">
           <img src={logo} alt="" />
-          <p>Iam a Frontend developer specializes in building dynamic and interactive user interfaces for web applications using the React.js library.</p>
+          <p>Iam a MERN Stack developer specializes in building dynamic and interactive user interfaces for web applications using MERN .</p>
         </div>
         <div className="footer-top-right">
           <a href="https://www.linkedin.com/in/neelam-senthil07">

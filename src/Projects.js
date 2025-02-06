@@ -5,6 +5,8 @@ import stylein from './assets/Fashion Clothes e-Commerce Website.jpg'
 import netflix from './assets/Netflix Users Rejoice_ Goodbye, Autoplay (Published 2020).jpg'
 import spotify from './assets/WhatsApp Image 2024-10-10 at 12.27.09_6ad42535.jpg'
 import gpt3 from './assets/WhatsApp Image 2024-10-11 at 19.57.05_cbad7160.jpg'
+import todo from './assets/to-do-list.png'
+import book from './assets/books-1977235_640.png'
 
 export const items = [
     {
@@ -21,10 +23,10 @@ export const items = [
         code:"https://github.com/neelamsenthil/weather-app"
     },
     {
-        image: roadster,
-        name:"Roadster - landingpage",
-        using: "React",
-        code:"https://github.com/neelamsenthil/Roadster"
+        image: todo,
+        name:"ToDo-List",
+        using: "MERN",
+        code:"https://github.com/neelamsenthil/MERN-ToDo"
     },
     {
         image: spotify,
@@ -34,15 +36,14 @@ export const items = [
         code:"https://github.com/neelamsenthil/Spotify-Clone"
     },
     {
-        image: netflix,
-        name:"Netflix-Clone",
-        using: "React",
-        using1: "firebase",
-        code:"https://github.com/neelamsenthil/Netflix-Clone"
+        image: book,
+        name:"Book-Store",
+        using: "MERN",
+        code:"https://github.com/neelamsenthil/MERN-BookStore"
     },
     {
         image: gpt3,
-        name:"CPT-3",
+        name:"GPT-3",
         using: "React",
         code:"https://github.com/neelamsenthil/GPT-3"
     },

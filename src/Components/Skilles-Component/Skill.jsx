@@ -39,7 +39,7 @@ const Skill = () => {
 
 
                 <div className="right">
-                    <h2 className='heading'>Others</h2>
+                    <h2 className='heading'>Backend</h2>
                     <div className="skill-content">
                     {others .map((item, index) => {
                         return <div className="skill" key={index}>
